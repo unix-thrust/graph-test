@@ -1,0 +1,14 @@
+# Node - Logs
+*.log
+npm-debug.log*
+
+# Node - Dependencies
+node_modules
+
+# Node - Code coverage
+/coverage
+/packages/*/coverage
+
+# Node - Build
+/lib
+/packages/*/lib
