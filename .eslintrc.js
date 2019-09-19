@@ -6,7 +6,7 @@ module.exports = {
   },
   extends : "eslint-config-airbnb-base",
   parser  : "babel-eslint",
-  plugins : ["babel", "react"],
+  plugins : ["babel"],
   globals : {
     // FIXME: Do we really need `require` for React?
     require : true
@@ -21,10 +21,7 @@ module.exports = {
     complexity : ["error", 20],         // Specify the maximum cyclomatic complexity (old value: 11)
     "max-params" : ["error", 10],       // Maximum parameters in function declaration
     curly : ["error", "all"],           // Specify curly brace conventions for all control statements
-    eqeqeq : [                          // Require the use of === and !==
-      "error",
-      "allow-null"
-    ],
+    eqeqeq : ["error", "allow-null"],   // Require the use of === and !==
     "no-alert" : "error",               // Disallow the use of alert, confirm, and prompt
     "no-eq-null" : "error",             // Disallow comparisons to null without a type-checking operator
     "no-unused-expressions" : "error",  // Disallow usage of expressions in statement position

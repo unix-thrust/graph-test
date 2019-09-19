@@ -8,7 +8,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 // import SpritesmithPlugin from "webpack-spritesmith";
 
 export default {
-  entry : "./src/index.js",
+  entry : "./src/main.js",
   target : "electron-renderer",
   output : {
     path : path.resolve(__dirname, "build"),
@@ -29,10 +29,11 @@ export default {
             presets : ["env", "react"],
           },
         },
-      }, {
-        test : /\.(s*)css$/,
-        use : ["style-loader", "css-loader"],
       },
+      // {
+      //   test : /\.(s*)css$/,
+      //   use : ["style-loader", "css-loader"],
+      // },
     ],
   },
   plugins : [
